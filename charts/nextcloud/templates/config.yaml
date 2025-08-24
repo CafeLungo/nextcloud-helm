@@ -1,4 +1,3 @@
-{{- if .Values.nextcloud.configs -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -16,4 +15,3 @@ data:
     {{- tpl ($.Files.Get (printf "files/defaultConfigs/%s.tpl" $filename)) $ | nindent 4 }}
   {{- end }}
   {{- end }}
-{{- end }}{{/* end-if configs */}}

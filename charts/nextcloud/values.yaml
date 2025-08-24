@@ -182,7 +182,7 @@ nextcloud:
   phpConfigs: {}
   ## Default config files that utilize environment variables:
   # see: https://github.com/nextcloud/docker/tree/master#auto-configuration-via-environment-variables
-  # IMPORTANT: Will be used only if you put extra configs, otherwise default will come from nextcloud itself
+  # IMPORTANT: Defaults come from nextcloud itself
   # Default confgurations can be found here: https://github.com/nextcloud/docker/tree/master/.config
   defaultConfigs:
     # To protect /var/www/html/config
